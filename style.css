@@ -1,0 +1,176 @@
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(30, 10%, 34%);
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 5px;
+}
+
+h1 {
+    font-family: "Young Serif";
+    text-align: left;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.container {
+
+    margin: 10px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    width: 100vh;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.img {
+    align-self: center;
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+}
+
+.Preparation {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    line-height: 30px;
+    width: 95%;
+    padding: 0 20px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+.Preparation span {
+    font-weight: 600;
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+}
+
+.prep {
+    display: block;
+    font-family: 'Outfit';
+    color: hsl(332, 51%, 32%);
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    text-align: left;
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+tr:last-of-type th,
+tr:last-of-type td {
+    border-bottom: none;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: custom-counter;
+    padding-left: 30px;
+}
+
+li {
+    counter-increment: custom-counter;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(custom-counter) ". ";
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    margin-right: 10px;
+    position: absolute;
+    left: -25px;
+}
+
+.Preparation ul {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.Preparation li::marker {
+    color: hsl(332, 51%, 32%);
+    font-size: 15px;
+}
+
+.Preparation li {
+    padding-left: 15px;
+}
+
+.Ingredients ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.Ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 15px;
+}
+
+.Ingredients li {
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.Instructions,
+.Ingredients {
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    margin-bottom: 25px;
+}
+
+.Instructions span {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        width: 90%;
+        margin: 10px;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
